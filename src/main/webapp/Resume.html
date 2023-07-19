@@ -7,16 +7,15 @@
 </head>
 <body>
     <form>
-        <h1>Create Your Resume</h1>
-        <br></br>
-        <hr>
+                                    <h1>Create Your Resume</h1>
+        <div>
         <h2>Image</h2>
-        <br>
         <label for="img">Select Image:</label>
-        <br>
+        </br><br>
         <input type="file" id="img" name="img" accept="image/*">
-        <br/><br/>
-        <hr>
+            <br>
+        </div>
+        <div>
         <h2>Personal Information</h2>
         <br>
         First name: <input type="text" name="firstName" />
@@ -35,9 +34,9 @@
 
         <br/><br/>
         Email   : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" />
-
-        <br/><br/>
-        <hr>
+            <br>
+        </div>
+        <div>
         <h2>Education</h2>
         <br>
         School name  :&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="schoolName" />
@@ -78,10 +77,81 @@
         <br/><br/>
 
         Field of study: &nbsp;&nbsp;&nbsp;<input type="text" name="study" />
+            <br>
+        </div>
+        <div>
+        <h2>Skills</h2>
 
+            <h4>Choose :</h4>>
+
+        <input type="checkbox" name="favoriteLanguage" value="Problem Solving"> Problem Solving  &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Critical Thinking"> Critical Thinking   &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Flexibility Skills"> Flexibility Skills &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Communication Skills"> Communication Skills &nbsp;
         <br/><br/>
-        <hr>
+        <input type="checkbox" name="favoriteLanguage" value="Teamwork Skills"> Teamwork Skills &nbsp;
 
+        <input type="checkbox" name="favoriteLanguage" value="Organization Skills"> Organization Skills &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Creativity Skills"> Creativity Skills &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Negotiation Skills"> Negotiation Skills &nbsp;
+        <br/><br/>
+        <input type="checkbox" name="favoriteLanguage" value="Project Management"> Project Management &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Marketing Skills"> Marketing Skills &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Writing Skills"> Writing Skills &nbsp;
+
+        <input type="checkbox" name="favoriteLanguage" value="Foreign Languages"> Foreign Languages &nbsp;
+        <br/><br/>
+        Any Other Skills :<br>
+        <textarea id="skills" name="skills" rows="4" cols="50" required></textarea>
+          </br>  <br>
+        </div>
+        <div>
+        <h2>Work Experience</h2>
+
+        <h4>Provide details for your most recent job :</h4>
+
+        Job Title : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"  name="job">
+        <br/><br/>
+        Company  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  name="jcompany">
+        <br/><br/>
+        City name : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  name="jcity">
+        <br/><br/>
+        Country : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  name="jcountry">
+        <br/><br/>
+        Job duration : <input type="text"  name="duration">
+          </br>  <br>
+        </div>
+        <div>
+        <h2>Hobbies</h2>
+            <br>
+        what do you like : <input type="text"  name="hobbies">
+          </br>  <br>
+        </div>
+        <div>
+        <h2>Projects</h2>
+            <br>
+        <label for="projects:">Add Projects:</label><br>
+        <textarea id="projects" name="projects" rows="4" cols="50" required></textarea>
+            </br><br>
+        </div>
+        <div>
+        <h2>Professional Statement</h2>
+            <br>
+        <label for="professionalStatement: ">Write professional Statement:</label><br>
+        <textarea id="professionalstatement" name="professionalStatement" rows="4" cols="50" required></textarea></br><br>
+        </div>
+        <div>
+            </br><br>
+        <input type="submit" value="Submit" />
+
+        </div>
     </form>
 </body>
 </html>
